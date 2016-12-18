@@ -1,17 +1,9 @@
-function checkOnclickEvent(param) {
-	console.log(param);
-}
+var i = document.getElementsByTagName('li'),
+	list = document.getElementById('lista'),
+	addElem = document.getElementById('addElem');
 
-var i = 1,
-	newElem,
-	list;
-
-var inputElem = document.getElementById('addElem');
-
-inputElem.addEventListener('click', function(e) {
-	list = document.getElementById('Lista')
+addElem.addEventListener('click', function(e) {
 	newElem = document.createElement('li');
-	newElem.innerHTML = 'item ' + i;
+	newElem.innerHTML = 'item ' + i.length;
 	list.appendChild(newElem);
-	i++;
 });
