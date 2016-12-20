@@ -1,4 +1,7 @@
-var wiersze = prompt('Podaj liczbę wierszy: ')
+var wiersze = prompt('Podaj liczbę wierszy: '),
+	i,
+	k,
+	j;
 
 
 function rysujChoinke(n) {
@@ -12,13 +15,10 @@ function rysujChoinke(n) {
 			star += '*';
 		}
 
-		for (k = ((n*2-1) - (i*2-1))/2; k > 0; k -= 1) {
-			star += ' ';
-		}
 		console.log(star);
 		star = '';
 	}
 
 }
 
-console.log(rysujChoinke(wiersze));
+rysujChoinke(wiersze);
