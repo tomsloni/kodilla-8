@@ -1,13 +1,13 @@
 var wiersze = prompt('Podaj liczbę wierszy: '),
-	i,
-	k,
-	j;
+	star = '';
+
 
 
 function rysujChoinke(n) {
+	var i, k, j;
 	for (i = 1, star = ''; i-1 != n; i++) {
 
-		for (k = ((n*2-1) - (i*2-1))/2; k > 0; k -= 1) {
+		for (k = 0; k <= n-i-1; k++) {
 			star += ' ';
 		}
 
